@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Arte</title>
+     <!-- css/bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- icone/bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      
+    <!-- aos animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <!-- css/pessoal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icone -->
+    <link rel="icon" href="img/book.svg">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo sabor e arte">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Receitas
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                      <li><a class="dropdown-item" href="#">Doces</a></li>
+                      <li><a class="dropdown-item" href="#">Salgados</a></li>
+                      <li><a class="dropdown-item" href="#">Massas</a></li>
+                      <li><a class="dropdown-item" href="#">Café da manhã</a></li>
+                      <li><a class="dropdown-item" href="#">Comida caseira</a></li>
+                      <li><a class="dropdown-item" href="#">Pratos principais</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Dicas de cozinha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Contatos</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- carrossel -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Receitas/arroz-de-forno.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Arroz de forno</h5>
+                  <p>Muito saboroso!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Receitas/macarrao.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Macarrão</h5>
+                  <p>Massa italiana</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Receitas/feijoada.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Feijoada</h5>
+                  <p>Preparado toda quarta e sábado</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Receitas/pizza.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>pizza</h5>
+                  <p>Massa levinha</p>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Voltar</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Avançar</span>
+            </button>
+            
+          </div>
+
+    </section>
+
+<!-- section home/cads destaque -->
+
+<section class="home" id="home">
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Destaque da semana</h2>
+    <div class="row">
+      <!-- card 01 -->
+       <div class="col-md-4 d-flex justify-content-center md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="img/Receitas/bolo.jpg" class="card-img-top" alt="bolo">
+        <div class="card-body">
+          <h5 class="card-title">Bolo Delicia!</h5>
+          <p class="card-text">bolo delicia, feito com os melhores ingredientes!</p>
+          <a href="#" class="btn btn-primary">Ver receita</a>
+        </div>
+      </div>
+    </div>
+
+        <!-- card 02 -->
+      <div class="col-md-4 d-flex justify-content-center md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Receitas/pao-de-queijo.webp" class="card-img-top" alt="pao-queijo">
+        <div class="card-body">
+          <h5 class="card-title">Pão de queijo</h5>
+          <p class="card-text">o melhor pão de queijo, com lembranças de minas.</p>
+          <a href="#" class="btn btn-primary">Ver receita</a>
+        </div>
+      </div>
+    </div>
+
+        <!-- card 03 -->
+      <div class="col-md-4 d-flex justify-content-center md-4"> 
+      <div class="card" style="width: 18rem;">
+        <img src="img/Receitas/strogonoff.jpg" class="card-img-top" alt="strogonoff">
+        <div class="card-body">
+          <h5 class="card-title">Strogonoff</h5>
+          <p class="card-text">explosão de sabor! com pedaços de frango e batatas rusticas.</p>
+          <a href="#" class="btn btn-primary">Ver receita</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section receitas -->
+
+<section class="receitas" id="receitas">
+  <div class="container my-5">
+    <h2 class="tex-center mb-5">Receitas</h2>
+
+    <!-- receita 01 -->
+     <div class="row align-itens-center receita-itens">
+      <div class="col-md-4">
+        <img src="img/Receitas/feijão-branco.webp" class="img-fluid" alt="feijao-branco">
+      </div>
+      <div class="col-md-8">
+        <span class="data">11/06/2024</span>
+        <h5>Feijão Tropeiro</h5>
+        <p>É uma iguaria típica da culinária brasileira, com uma combinação incrível de sabores e ingredientes tradicionais.</p>
+        <a href="" class="btn btn-primary mt-3">Saiba mais</a>
+      </div>
+     </div>
+
+     <!-- receita 2  -->
+     <div class="row align-itens-center receita-itens">
+      <div class="col-md-4">
+        <img src="img/Receitas/frago-ao-molho.jpg" class="img-fluid" alt="frango" >
+      </div>
+      <div class="col-md-8">
+        <span class="data">11/06/2024</span>
+        <h5>Frango ao molho</h5>
+        <p>é uma combinação irresistível de sabores, com o frango macio e o molho rico e encorpado. É uma escolha perfeita para quem busca uma refeição reconfortante e cheia de sabor caseiro.</p>
+        <a href="" class="btn btn-primary mt-3">Saiba mais</a>
+      </div>
+     </div>
+
+     <!-- receita 3 -->
+     <div class="row align-itens-center receita-itens">
+      <div class="col-md-4">
+        <img src="img/Receitas/salada.avif" class="img-fluid" alt="salada">
+      </div>
+      <div class="col-md-8">
+        <span class="data">11/06/2024</span>
+        <h5>Salada refrascante</h5>
+        <p>salada Refrescante, com vegetais, folhas, e um tipo de carne.</p>
+        <a href="" class="btn btn-primary mt-3">Saiba mais</a>
+      </div>
+     </div>
+
+     <!-- receita 4 -->
+     <div class="row align-itens-center receita-itens">
+      <div class="col-md-4">
+        <img src="img/Receitas/Teriyaki.jpg" class="img-fluid" alt="Teriyaki">
+      </div>
+      <div class="col-md-8">
+        <span class="data">11/06/2024</span>
+        <h5>Teriyaki</h5>
+        <p> Uma deliciosa técnica de cozimento japonesa que combina sabores agridoces e salgados em uma harmonia irresistível.</p>
+        <a href="#" class="btn btn-primary mt-3">Saiba Mais </a>
+      </div>
+     </div>
+
+     <!-- receitas 5 -->
+     <div class="row align-itens-center receita-itens">
+      <div class="col-md-4">
+        <img src="img/Receitas/morango.webp" class="img-fluid" alt="morango">
+      </div>
+      <div class="col-md-8">
+        <span class="data">11/06/2024</span>
+        <h5>Torta de Morango</h5>
+        <p> É uma sobremesa que combina a frescura e doçura dos morangos com a leveza e crocância da massa, resultando em uma explosão de sabores e texturas.</p>
+        <a href="" class="btn btn-primary mt-3">Saiba Mais</a>
+      </div>
+     </div>
+  </div>
+</section>
+
+<!-- dicas da cozinha -->
+<section class="dicas" id="dicas">
+  <div class="container my-5">
+    <h2 class="text-center md-4">Dicas da cozinha</h2>
+    <div class="row justify-content-center">
+
+    <!-- card dica 01 -->
+     <div class="col-md-4 d-flex align-itens-stretch">
+      <div class="dicas-container">
+        <img src="img/cozinha.png" alt="cozinha" class="dicas-img">
+        <h5>Organização da cozinha</h5>
+        <p>Mantenha a cozinha organizada, para facilitar o preparo das refeições</p>
+        <a href="">ver receita</a>
+      </div>
+     </div>
+  
+      <!-- card dica 02 -->
+       <div class="col-md-4 d-flex align-itens-stretch">
+        <div class="dicas-container">
+          <img src="img/alimento.png" alt="alimento" class="dicas-img">
+          <h5>Alimentos cortados</h5>
+          <p>cortar todos os vegetais e legumes, para facilitar no preparo.</p>
+          <a href="">ver receita</a>
+        </div>
+       </div>
+    
+        <!-- card dica 03 -->
+         <div class="col-md-4 d-flex align-itens-stretch">
+          <div class="dicas-container">
+            <img src="img/temperos.jpg" alt="temperos" class="dicas-img">
+            <h5>temperos frescos</h5>
+            <p>Temperos frescos e organizados, para o melhor preparo.</p>
+            <a href="">ver receita</a>
+          </div>
+         </div>
+        </div>
+  </div>
+</section>
+
+<!-- sobre nós -->
+
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 texto-sobre">
+        <h2 class="fw-bold md-4">Sobre nós</h2>
+        <p>
+          Nossa missão é proporcionar a vocês uma verdadeira viagem pelo sabor, trazendo à mesa 
+          pratos que remetem às receitas tradicionais, passadas de geração em geração. Cada ingrediente
+          é selecionado cuidadosamente, buscando sempre a frescura e a qualidade que garantem o melhor resultado final.
+        </p>
+        <p>
+          Em nosso cardápio, vocês encontrarão uma variedade de pratos que vão desde as clássicas
+          receitas da culinária local até algumas surpresas que temos o prazer de apresentar a 
+          vocês. Desde aquele arroz e feijão que remetem àquela sensação de conforto até aquela 
+          sobremesa que traz memórias da infância, cada item foi pensado para despertar não só o
+          paladar, mas também lembranças e emoções.
+        </p>
+        <p>
+          Além disso, queremos que se sintam em casa aqui. Nosso ambiente é acolhedor, com uma 
+          equipe sempre pronta para atender às suas necessidades e garantir uma experiência 
+          agradável do início ao fim.
+        </p>
+      </div>
+      <div class="col-lg-6 img-p">
+        <img src="img/restaurante.jpg" alt="restaurante" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contato -->
+ <section class="contato" id="contato">
+  <div class="conteiner bg-light py-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="md-4">Entre em contato</h2>
+        <form action="#">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Escreva seu nome aqui.">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Escreva seu E-mail aqui.">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" class="form-control" rows="5" placeholder="Digite sua mensagem aqui!"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-4">Informaões de contato</h2>
+        <p><i class="bi bi-geo-alt-fill"></i>Endereço: rua exemplo, 123</p>
+        <p><i class="bi bi-telephone-fill"></i>Telefone: (xx) xxxx-xxxx</p>
+        <p><i class="bi bi-envelope-fill"></i>Email: sabor.arte@gmail.com</p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="row">
+    <!-- logo -->
+    <div class="col-md-2-flex align-itens-center justify-content-center">
+      <img src="img/logo.png" alt="sabor e arte" class="md-3">
+     </div>
+
+     <!-- sobre -->
+      <div class="col-md-4 d-flex align-items-center">
+      <div>
+        <h5>Sobre nós</h5>
+        <p>
+          Somos uma plataforma dedicada a trazer as melhores receitas para você. 
+          Nossa missão é inspirar e facilitar na cozinha do dia a dia.
+        </p>
+      </div>
+      </div>
+
+      <!-- menu -->
+
+      <div class="col-md-2 d-flex align-items-center text-center text-md-left">
+        <div>
+          <h5>links Uteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#dicas">Dicas de cozinha</a></li>
+            <li><a href="#receitas">Receitas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contato -->
+
+  <div class="col-md-4 d-flex aling-items-center">
+    <div>
+      <h5>Contato</h5>
+      <ul class="list-unstyled">
+        <li><p>E-mail</p></li>
+        <li><p>Telefone</p></li>
+        <li><p>Endereço</p></li>
+
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- script/bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- script/animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
+
+</body>
+</html>
